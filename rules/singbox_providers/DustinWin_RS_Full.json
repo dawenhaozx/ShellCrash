@@ -24,8 +24,8 @@
     { "tag": "dns-out", "type": "dns" },
 
     { "tag": "🇭🇰 香港节点", "type": "urltest", "tolerance": 100, "use_all_providers": true, "includes": [ "(?i)(🇭🇰|港|hk|hongkong|hong kong)" ] },
-    { "tag": "🇩🇪 德国节点", "type": "urltest", "tolerance": 100, "use_all_providers": true, "includes": ["(?i)(🇩🇪|德|de|germany)"] },
-    { "tag": "🇰🇷 韩国节点", "type": "urltest", "tolerance": 100, "use_all_providers": true, "includes": ["(?i)(🇰🇷|韩|kr|korea|seoul|south korea)"] },
+    { "tag": "🇩🇪 德国节点", "type": "urltest", "tolerance": 100, "use_all_providers": true, "includes": [ "(?i)(🇩🇪|德|de|germany)" ] },
+    { "tag": "🇰🇷 韩国节点", "type": "urltest", "tolerance": 100, "use_all_providers": true, "includes": [ "(?i)(🇰🇷|韩|kr|korea|seoul|south korea)" ] },
     { "tag": "🇸🇬 新加坡节点", "type": "urltest", "tolerance": 100, "use_all_providers": true, "includes": [ "(?i)(🇸🇬|新|sg|singapore)" ] },
     { "tag": "🇺🇸 美国节点", "type": "urltest", "tolerance": 100, "use_all_providers": true, "includes": [ "(?i)(🇺🇸|美|us|unitedstates|united states)" ] }
   ],
