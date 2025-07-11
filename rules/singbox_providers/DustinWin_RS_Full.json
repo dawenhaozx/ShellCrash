@@ -1,12 +1,11 @@
 //DustinWin-ruleset全分组规则
 {
   "outbounds": [
-    { "tag": "🌐 手动选择", "type": "selector", "use_all_providers": true },
     { "tag": "🚀 节点选择", "type": "selector", "outbounds": [ "🇭🇰 香港节点", "🇩🇪 德国节点", "🇰🇷 韩国节点", "🇸🇬 新加坡节点", "🇺🇸 美国节点", "🌐 手动选择" , {providers_tags} ] },
     { "tag": "📈 网络测试", "type": "selector", "outbounds": [ "🎯 全球直连", "🇭🇰 香港节点", "🇩🇪 德国节点", "🇰🇷 韩国节点", "🇸🇬 新加坡节点", "🇺🇸 美国节点", "🌐 手动选择" , {providers_tags} ] },
     { "tag": "🤖 人工智能", "type": "selector", "outbounds": [ "🚀 节点选择", "🇭🇰 香港节点", "🇩🇪 德国节点", "🇰🇷 韩国节点", "🇸🇬 新加坡节点", "🇺🇸 美国节点" ] },
     { "tag": "📋 Trackerslist", "type": "selector", "outbounds": [ "🎯 全球直连", "🚀 节点选择" ] },
-    { "tag": "🎮 游戏服务", "type": "selector", "outbounds": [ "🎯 全球直连", "🌐 手动选择", "🚀 节点选择" ] },
+    { "tag": "🎮 游戏服务", "type": "selector", "outbounds": [ "🎯 全球直连", "🚀 节点选择" ] },
     { "tag": "🪟 微软服务", "type": "selector", "outbounds": [ "🎯 全球直连", "🚀 节点选择" ] },
     { "tag": "🇬 谷歌服务", "type": "selector", "outbounds": [ "🎯 全球直连", "🚀 节点选择" ] },
     { "tag": "🍎 苹果服务", "type": "selector", "outbounds": [ "🎯 全球直连", "🚀 节点选择" ] },
@@ -23,6 +22,7 @@
     { "tag": "GLOBAL", "type": "selector", "outbounds": [ "DIRECT", "REJECT", "🇭🇰 香港节点", "🇩🇪 德国节点", "🇰🇷 韩国节点", "🇸🇬 新加坡节点", "🇺🇸 美国节点", "🌐 手动选择" , {providers_tags} ] },
     { "tag": "dns-out", "type": "dns" },
 
+    { "tag": "🌐 手动选择", "type": "selector", "use_all_providers": true },
     { "tag": "🇭🇰 香港节点", "type": "urltest", "tolerance": 100, "use_all_providers": true, "includes": [ "(?i)(🇭🇰|港|hk|hongkong|hong kong)" ] },
     { "tag": "🇩🇪 德国节点", "type": "urltest", "tolerance": 100, "use_all_providers": true, "includes": [ "(?i)(🇩🇪|德|de|germany)" ] },
     { "tag": "🇰🇷 韩国节点", "type": "urltest", "tolerance": 100, "use_all_providers": true, "includes": [ "(?i)(🇰🇷|韩|kr|korea|seoul|south korea)" ] },
