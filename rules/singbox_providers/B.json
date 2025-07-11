@@ -1,6 +1,7 @@
 //DustinWin-ruleset黑名单全分组规则
 {
   "outbounds": [
+    { "tag": "🌐 手动选择", "type": "selector", "use_all_providers": true },
     { "tag": "🚀 节点选择", "type": "selector", "outbounds": [ "🇭🇰 香港节点", "🇩🇪 德国节点", "🇰🇷 韩国节点", "🇸🇬 新加坡节点", "🇺🇸 美国节点", , "🌐 手动选择" , {providers_tags} ] },
     { "tag": "📈 网络测试", "type": "selector", "outbounds": [ "🎯 全球直连", "🚀 节点选择", "🇭🇰 香港节点", "🇩🇪 德国节点", "🇰🇷 韩国节点", "🇸🇬 新加坡节点", "🇺🇸 美国节点", , "🌐 手动选择" , {providers_tags} ] },
     { "tag": "🤖 人工智能", "type": "selector", "outbounds": [ "🚀 节点选择", "🇭🇰 香港节点", "🇩🇪 德国节点", "🇰🇷 韩国节点", "🇸🇬 新加坡节点", "🇺🇸 美国节点" ] },
@@ -16,7 +17,6 @@
     { "tag": "GLOBAL", "type": "selector", "outbounds": [ "DIRECT", "REJECT", "🇭🇰 香港节点", "🇩🇪 德国节点", "🇰🇷 韩国节点", "🇸🇬 新加坡节点", "🇺🇸 美国节点", , "🌐 手动选择" , {providers_tags} ] },
     { "tag": "dns-out", "type": "dns" },
 
-    { "tag": "🌐 手动选择", "type": "selector", "use_all_providers": true },
     { "tag": "🇭🇰 香港节点", "type": "urltest", "tolerance": 100, "use_all_providers": true, "includes": [ "(?i)(🇭🇰|港|hk|hongkong|hong kong)" ] },
     { "tag": "🇩🇪 德国节点", "type": "urltest", "tolerance": 100, "use_all_providers": true, "includes": ["(?i)(🇩🇪|德|de|germany)"] },
     { "tag": "🇰🇷 韩国节点", "type": "urltest", "tolerance": 100, "use_all_providers": true, "includes": ["(?i)(🇰🇷|韩|kr|korea|seoul|south korea)"] },
@@ -35,7 +35,8 @@
       { "rule_set": [ "games" ], "outbound": "🎮 游戏平台" },
       { "rule_set": [ "ai" ], "outbound": "🤖 人工智能" },
       { "rule_set": [ "networktest" ], "outbound": "📈 网络测试" },
-      { "rule_set": [ "cn", "cnip" ], "mode": "and", "invert": true, "outbound": "🧱 代理域名" },
+      { "rule_set": [ "tld-proxy" ], "outbound": "🧱 代理域名" },
+      { "rule_set": [ "proxy" ], "outbound": "🧱 代理域名" },
       { "rule_set": [ "mediaip" ], "outbound": "🌍 国外媒体", "skip_resolve": true },
       { "rule_set": [ "gamesip" ], "outbound": "🎮 游戏平台", "skip_resolve": true },
       { "rule_set": [ "telegramip" ], "outbound": "📲 电报消息", "skip_resolve": true }
@@ -103,27 +104,6 @@
         "format": "binary",
         "path": "./proxy.srs",
         "url": "https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset-compatible/proxy.srs"
-      },
-      {
-        "tag": "cn",
-        "type": "remote",
-        "format": "binary",
-        "path": "./cn.srs",
-        "url": "https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset-compatible/cn.srs"
-      },
-      {
-        "tag": "privateip",
-        "type": "remote",
-        "format": "binary",
-        "path": "./privateip.srs",
-        "url": "https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset-compatible/privateip.srs"
-      },
-      {
-        "tag": "cnip",
-        "type": "remote",
-        "format": "binary",
-        "path": "./cnip.srs",
-        "url": "https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset-compatible/cnip.srs"
       },
       {
         "tag": "mediaip",
