@@ -74,6 +74,13 @@
         "url": "https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset-compatible/trackerslist.srs"
       },
       {
+        "tag": "google-cn",
+        "type": "remote",
+        "format": "binary",
+        "path": "./google-cn.srs",
+        "url": "https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset-compatible/google-cn.srs"
+      },
+      {
         "tag": "microsoft-cn",
         "type": "remote",
         "format": "binary",
