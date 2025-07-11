@@ -1,7 +1,7 @@
 //DustinWin-ruleset黑名单全分组规则
 {
   "outbounds": [
-    { "tag": "🌐 手动选择", "type": "selector", "use_all_providers": true },
+    { "tag": "🌐 手动选择", "type": "selector", "use_all_providers": true, "excludes": [ "(到期|剩余)" ] },
     { "tag": "🚀 节点选择", "type": "selector", "outbounds": [ "🇭🇰 香港节点", "🇩🇪 德国节点", "🇰🇷 韩国节点", "🇸🇬 新加坡节点", "🇺🇸 美国节点", , "🌐 手动选择" , {providers_tags} ] },
     { "tag": "📈 网络测试", "type": "selector", "outbounds": [ "🎯 全球直连", "🚀 节点选择", "🇭🇰 香港节点", "🇩🇪 德国节点", "🇰🇷 韩国节点", "🇸🇬 新加坡节点", "🇺🇸 美国节点", , "🌐 手动选择" , {providers_tags} ] },
     { "tag": "🤖 人工智能", "type": "selector", "outbounds": [ "🚀 节点选择", "🇭🇰 香港节点", "🇩🇪 德国节点", "🇰🇷 韩国节点", "🇸🇬 新加坡节点", "🇺🇸 美国节点" ] },
